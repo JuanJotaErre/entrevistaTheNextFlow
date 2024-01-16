@@ -1,0 +1,16 @@
+<p>form works!</p>
+
+<div [formGroup]="formGroup">
+  <label>Primera string</label>
+  <input class="form-control"
+          type="text"
+         [formControl]="primeraStringControl">
+
+  <label>Segona string</label>
+  <input class="form-control"
+          type="text"
+         [formControl]="segonaStringControl">
+
+  <button (click)="concatenar()" >Concatenar</button>
+  <input type="text" [value]="resultat">
+</div>
